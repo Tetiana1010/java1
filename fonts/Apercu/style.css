@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Apercu Mono Pro';
+    src: local('Apercu Mono Pro Regular'), local('Apercu-Mono-Pro-Regular'),
+        url('ApercuMonoPro-Regular.woff2') format('woff2'),
+        url('ApercuMonoPro-Regular.woff') format('woff'),
+        url('ApercuMonoPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
