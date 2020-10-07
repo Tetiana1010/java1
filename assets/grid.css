@@ -36,6 +36,15 @@ body {
     grid-row-gap: 0; 
     height: 100%;
 }
+
+.half {
+    height: 50%;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
 .div1 {
     grid-area: 1 / 4 / 9 / 5;
     border-left: 2px solid rgba(142, 142, 145, 1);
@@ -50,16 +59,18 @@ body {
 .div4 {
     overflow-y: hidden;
     grid-area: 4 / 1 / 8 / 4;
+    padding-left: 8vw;
 }
 .div5 { 
-    grid-area: 1 / 1 / 2 / 4; 
+    grid-area: 1 / 1 / 2 / 8; 
 } 
 .div6 { 
-    grid-area: 8 / 1 / 9 / 8; 
-    border-top:  1px solid rgb(0, 0, 0); 
+    grid-area: 8 / 1 / 9 / 8;  
 } 
 .div7 {
     grid-area: 2 / 1 / 8 / 4;
+    text-align: left;
+    padding-left: 8vw;
 }
 
 .parent > div {
@@ -82,6 +93,7 @@ body {
 .div4 > div {
     height: 100%;
 }
+
 .summary {
     display: none;
 }
@@ -98,6 +110,7 @@ h1 {
     font-family: 'Aktiv Grotesk';
     font-size: 10rem;
     letter-spacing: 0.06rem;
+    text-align: left;
     padding: 0;
     margin: 0;
 }
@@ -112,9 +125,15 @@ h2 {
 }
 
 h3 {
-    font-size: 5rem;
+    font-family: 'Aktiv Grotesk';
+    max-width: 35vw;
+    display: flex;
+    right: 0%;
+    font-size: 6.5rem;
     line-height: 120%;
-    align-items: left;
+    padding: 0;
+    margin: 5vh 0;
+    
 }
 
 h4 {
@@ -129,25 +148,38 @@ p {
    padding: 0 calc(15/1440 * 100vw);
 }
 
+  
 .mainText {
-    font-size: 1.5rem;
-    max-width:  0 calc(263/1440 * 100%);
+    padding: 0;
+    font-size: 2.1rem;
+    max-width:  23vw;
 }
 
+ 
 b {
     color: rgba(35, 31, 32, 1);
 }
-
-li {
+ul {
+    width: 50%;
+    left: 0;
+    margin: 0;
+    padding: 0;
     display: inline;
 }
-
-li + li {
-    padding: 0 calc(60/1440 * 100%);
+ li {
+    display: inline;
+    padding: 0 calc(35/1440 * 100%);
 }
 
 img {
     width: 92%;
+}
+.mainPhoto {
+    position: absolute;
+    width: 51%;
+    height: 100%;
+    left: 45%;
+    z-index: -1;
 }
 
 figcaption {
@@ -155,6 +187,22 @@ figcaption {
     color: rgba(105, 105, 105, 1);
     text-decoration: underline;
 }
+
+header {
+    margin: 2.7vh 8vw 0 8vw;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+footer {
+    font-family: 'Aktiv Grotesk';
+    font-size: 1.4rem;
+    line-height: 125.7%;
+    letter-spacing: 0.06rem;
+    margin: 2.5vh 0 0 8vw;
+    text-align: left;
+}
+
 
 /* unvisited link */
 a:link {
@@ -171,4 +219,35 @@ a:hover {
     color: rgba(64, 64, 64, 1);
     text-decoration: underline;            
 }
+
+
+.box {
+    width: 23vw;
+    height: 10vh;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 5vh 0;
+} 
+
+.box > a {
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.box > a:hover {
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 0; 
+    margin: 0;
+}
+
+
 
