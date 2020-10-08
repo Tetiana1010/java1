@@ -150,6 +150,8 @@ h3 {
     line-height: 120%;
     padding: 0;
     margin: 5vh 0;
+    animation-name: box-slide-up;
+    animation-duration: 1s;
     
 }
 @media  (max-width: 600px) {
