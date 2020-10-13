@@ -42,7 +42,3 @@
         dayDiv.addEventListener("mouseover", toggleSummary3)
         dayDiv.addEventListener("mouseout", toggleSummary3)
 
-function myFunction () {
-    document.getElementById("box5").style.backgroundSize = "60px 120px";
-}
-
