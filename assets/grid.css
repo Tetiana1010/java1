@@ -400,7 +400,7 @@ a:hover {
 .box {
     width: 23vw;
     height: 10vh;
-    border: 0.3vw solid rgba(35, 31, 32, 1);
+    border: 2px solid rgba(35, 31, 32, 1);
     border-radius: 15px;
     text-align: center;
     align-items: center;
@@ -414,6 +414,7 @@ a:hover {
 @media  (max-width: 600px) {
     .box {
     grid-area: 6 / 1 / 8 / 2;
+    border: 0.3vw solid rgba(35, 31, 32, 1);
     align-items: flex-end;
     width: 80vw;
     padding: 0;
@@ -437,7 +438,6 @@ a:hover {
 .box > a:hover {
     color: #ffffff;
     background: rgba(35, 31, 32, 1);
-    border: 2px solid rgba(35, 31, 32, 1);
     padding: 0; 
     margin: 0;
 }
